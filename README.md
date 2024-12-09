@@ -77,6 +77,6 @@ Contributions are welcome! Feel free to open issues or submit pull requests to i
 
 ### Acknowledgments
 
-[Playwright Documentation] (https://playwright.dev/python/docs/intro)
-[Flask Documentation] (https://flask.palletsprojects.com/en/latest/)
-[Llama Model by Meta AI] (https://www.llama.com/)
+* [Playwright Documentation](https://playwright.dev/python/docs/intro)  
+* [Flask Documentation](https://flask.palletsprojects.com/en/latest/)  
+* [Llama Model by Meta AI](https://www.llama.com/)  

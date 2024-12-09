@@ -32,7 +32,7 @@ Ensure you have the following installed on your machine:
    docker-compose up --build
 
 3. **Access the Application**  
-   Open your browser and go to http://localhost:5000.
+   Open your browser and go to http://localhost:25565.
 
 ### Project Structure
 

@@ -1,0 +1,6 @@
+lxml
+playwright
+python-dateutil
+beautifulsoup4
+markdown
+langchain-community

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TechWatchTool</title>
+        <link rel="icon" href="{{ url_for('static', filename='icons/rss.ico') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}" />
+    </head>
+    <body class="body">
+        <div id="top-bar">
+            <div style="height:2vh;"></div>
+            <h1>News of the week</h1>
+            <div style="height:2vh;"></div>
+        </div>
+        <div id="article-section">
+            <div class="projcard-container">
+                {% for item in article_json %}
+                    {% if 'high' in (item.output).lower() and 'moderate' in (item.output).lower() %}
+                    <div class="projcard projcard-yellow">
+                    {% elif 'high' in (item.output).lower() %}
+                    <div class="projcard projcard-green">
+                    {% elif 'moderate' in (item.output).lower() %}
+                    <div class="projcard projcard-blue">
+                    {% else %}
+                    <div class="projcard projcard-red">
+                    {% endif %}
+                        <div class="projcard-innerbox">
+                            <a href="{{ item.link }}">
+                                <div class="container-img" >
+                                    <img class="projcard-img" src="{{ item.image }}" />
+                                </div>
+                            </a>
+                            <div class="projcard-textbox">
+                            <div class="projcard-title">{{ item.title }}</div>
+                            <div class="projcard-subtitle">{{ item.date }}</div>
+                            <div class="projcard-bar"></div>
+                            <div class="projcard-description">{{ item.resume | safe }}</div>
+                            <div class="projcard-tagbox">
+                            {% for cat in item.categories %}
+                                {% if cat != '' %}
+                                    <span class="projcard-tag {{ cat[:4].lower() }}">{{ cat }}</span>
+                                {% endif %}
+                            {% endfor %}
+                            </div>
+                            </div>
+                        </div>
+                    </div>   
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+    <script src="{{ url_for('static', filename='js/zoomer.js') }}"></script>
+</html>

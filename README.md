@@ -36,31 +36,31 @@ Ensure you have the following installed on your machine:
 
 ### Project Structure
 
-  ```
-  tech-watch-tool/
-  ├── app/
-  │   ├── templates/         # HTML templates for the Flask UI
-  │   ├── static/            # CSS and JavaScript for the front end
-  │   ├── app.py             # Flask application
-  │   ├── dockerfile         # Docker python image
-  │   └── requierements.txt  # Python depedencies
-  ├── ollama/
-  │   └── Llama3.2-3B        # Ollama Llama3.2-3b version pulled
-  ├── scraper/
-  │   ├── analyze/           # Ollama interactions directory
-  │   │   └── llm.py         # Ollama requests and prompts functions
-  │   ├── tools/             # Tools directory 
-  │   │   ├── config.py      # Configuration file with categories defined and other variables
-  │   │   └── utils.py       # Diverses tools used in the script
-  │   ├── website/  # Tests for scraping functionality
-  │   │   ├── rss.py         # Abstract class that define RSS Feed classes, use it to add a new source
-  │   │   └── sources.py     # All the data gathering endpoints, can be RSS feed, websites, blogs...
-  │   ├── dockerfile         # Docker python image
-  │   ├── main.py            # Main of the scraper
-  │   └── requierements.txt  # Python depedencies
-  ├── docker-compose.yml     # Docker-compose configuration, ollama image, playwright image and redirection to build folders
-  ├── entrypoint.sh          # Ollama pull Llama3.2:3b
-  └── README.md              # Project documentation  
+   ```
+   tech-watch-tool/
+   ├── app/
+   │   ├── templates/         # HTML templates for the Flask UI
+   │   ├── static/            # CSS and JavaScript for the front end
+   │   ├── app.py             # Flask application
+   │   ├── dockerfile         # Docker python image
+   │   └── requierements.txt  # Python depedencies
+   ├── ollama/
+   │   └── Llama3.2-3B        # Ollama Llama3.2-3b version pulled
+   ├── scraper/
+   │   ├── analyze/           # Ollama interactions directory
+   │   │   └── llm.py         # Ollama requests and prompts functions
+   │   ├── tools/             # Tools directory 
+   │   │   ├── config.py      # Configuration file with categories defined and other variables
+   │   │   └── utils.py       # Diverses tools used in the script
+   │   ├── website/  # Tests for scraping functionality
+   │   │   ├── rss.py         # Abstract class that define RSS Feed classes, use it to add a new source
+   │   │   └── sources.py     # All the data gathering endpoints, can be RSS feed, websites, blogs...
+   │   ├── dockerfile         # Docker python image
+   │   ├── main.py            # Main of the scraper
+   │   └── requierements.txt  # Python depedencies
+   ├── docker-compose.yml     # Docker-compose configuration, ollama image, playwright image and redirection to build folders
+   ├── entrypoint.sh          # Ollama pull Llama3.2:3b
+   └── README.md              # Project documentation  
 
 ### Technologies Used
 

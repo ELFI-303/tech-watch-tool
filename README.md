@@ -62,6 +62,7 @@ Ensure you have the following installed on your machine:
    ├── entrypoint.sh          # Ollama pull Llama3.2:3b
    └── README.md              # Project documentation  
 
+
 ### Technologies Used
 
 * Docker: For containerized development and deployment.

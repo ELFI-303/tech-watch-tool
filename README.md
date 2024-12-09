@@ -60,8 +60,8 @@ Ensure you have the following installed on your machine:
    │   └── requierements.txt  # Python depedencies
    ├── docker-compose.yml     # Docker-compose configuration, ollama image, playwright image and redirection to build folders
    ├── entrypoint.sh          # Ollama pull Llama3.2:3b
-   └── README.md              # Project documentation  
-
+   └── README.md              # Project documentation
+   ```
 
 ### Technologies Used
 
